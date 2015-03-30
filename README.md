@@ -1,2 +1,2 @@
 # edw-accounts
-Accounts Application for EDW
+Accounts application site for EDW
