@@ -3,6 +3,9 @@
 // Declare app level module which depends on filters, and services
 angular.module('myApp.config', [])
 
+    //Navbar partial view
+    .constant('navbarPath', 'partials/navbar.html')
+
   // version of this seed app is compatible with angularFire 1.0.0
   // see tags for other versions: https://github.com/firebase/angularFire-seed/tags
   .constant('version', '1.0.0')
@@ -11,7 +14,8 @@ angular.module('myApp.config', [])
   .constant('loginRedirectPath', '/login')
 
   // your Firebase data URL goes here, no trailing slash
-  .constant('FBURL', 'https://angularfire-seed-dev.firebaseio.com')
+  //.constant('FBURL', 'https://angularfire-seed-dev.firebaseio.com')
+  .constant('FBURL', 'https://EDW-AF2.firebaseio.com')
 
   // double check that the app has been configured before running it and blowing up space and time
   .run(['FBURL', '$timeout', function(FBURL, $timeout) {
