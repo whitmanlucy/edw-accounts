@@ -4,3 +4,6 @@
 
 ## Directory-based project format:
 .idea/
+
+# npm log files
+npm-debug.log

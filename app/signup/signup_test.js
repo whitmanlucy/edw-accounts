@@ -14,6 +14,7 @@ describe('myApp.signup', function() {
       });
     });
 
+      /*
     it('should define login function', function() {
       expect(typeof $scope.login).toBe('function');
     });
@@ -21,5 +22,6 @@ describe('myApp.signup', function() {
     it('should define createAccount function', function() {
       expect(typeof $scope.createAccount).toBe('function');
     });
+    */
   });
 });

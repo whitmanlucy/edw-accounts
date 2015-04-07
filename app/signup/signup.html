@@ -1,22 +1,70 @@
+<div class="container">
 
-<h2>Signup</h2>
+    <style>
+        .form-signup {
+            max-width: 500px;
+            padding: 15px;
+            margin: 0 auto;
+        }
+        .form-signin .form-signin-heading,
+        .form-signin .checkbox {
+            margin-bottom: 10px;
+        }
 
-<form>
-    <label>
-        <span>email</span>
-        <input type="text" ng-model="email" />
-    </label>
-    <label>
-        <span>password</span>
-        <input type="password" ng-model="pass" />
-    </label>
-    <label>
-        <span>confirm pass</span>
-        <input type="password" ng-model="confirm" />
-    </label>
-    <button ng-click="createAccount()">Create Account</button>
-    <button ng-cloak ng-show="createMode" ng-click="createMode = false">Cancel</button>
+        .form-signin .form-control {
+            position: relative;
+            height: auto;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .form-signin .form-control:focus {
+            z-index: 2;
+        }
+        .form-signin input[type="email"] {
+            margin-bottom: -1px;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+        .form-signin input[type="password"] {
+            margin-bottom: 10px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
 
-    <p ng-show="err" class="error">{{err}}</p>
-</form>
+    </style>
+
+    <form class="form-signup">
+        <div class="row">
+            <p class="text-center"><img src="http://eatdrinkweb.com/images/logos/EetDrinkWeb.png"></p>
+
+
+            <h2 class="form-signin-heading">Signup</h2>
+            <p ng-show="err" class="error">{{err}}</p>
+
+            <label for="inputBusinessName" class="sr-only">Business Name</label>
+            <input type="text" id="inputBusinessName" class="form-control" placeholder="Business Name" ng-model="businessName">
+            <div><br><br></div>
+
+            <label for="inputEmail" class="sr-only">Email address</label>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus ng-model="email">
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required ng-model="pass">
+
+            <div><br><br></div>
+
+
+            <button class="btn btn-primary btn-block" ng-click="createAccount()">Create Account</button>
+
+        </div>
+    </form>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        Terms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Privacy&nbsp;&nbsp;&nbsp;&nbsp;Support
+    </div>
+</footer>
 

@@ -17,7 +17,8 @@ module.exports = function(config){
       'app/chat/**/*.js',
       'app/home/**/*.js',
       'app/login/**/*.js',
-      'app/config_test.js'
+        'app/signup/**/*.js',
+        'app/config_test.js'
     ],
 
     autoWatch : true,

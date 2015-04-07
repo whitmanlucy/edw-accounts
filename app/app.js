@@ -8,7 +8,7 @@ angular.module('myApp', [
     'myApp.account',
     'myApp.chat',
     'myApp.login',
-    'myApp.signup'
+    'myApp.signup',
   ])
 
   .run(['$rootScope', 'Auth', function($rootScope, Auth) {
